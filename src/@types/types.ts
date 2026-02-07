@@ -1,4 +1,12 @@
-//Tipagem dos dados da vaga que a api retorna
+export type HeaderProps = {
+  onSearch: (term: string) => void
+};
+
+export type OutletContext = {
+  jobs: RemotiveJob[];
+  loading: boolean;
+  error: string | null;
+};
 
 export type RemotiveJob = {
     id: number;
