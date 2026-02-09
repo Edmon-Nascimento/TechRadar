@@ -112,7 +112,7 @@
 
   .list {
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 2;
+    gap: 2rem;
   }
 
   .title {
