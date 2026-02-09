@@ -8,7 +8,6 @@ export const router = createBrowserRouter([
     element:<Layout/>,
     children:
     [
-      
       {
         path: "/",
         element: <JobsPage/>,
