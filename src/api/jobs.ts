@@ -1,5 +1,5 @@
 import axios from "axios"
-import type { RemotiveJob } from "../types/jobs"
+import type { RemotiveJob } from "../@types/types";
 
 const api = axios.create({
     baseURL:"https://remotive.com/api"
