@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Header from "../header";
+import Footer from "../footer";
 import { getJobs } from "../../api/jobs";
 import type { RemotiveJob } from "../../@types/types";
 
@@ -36,6 +37,7 @@ export default function Layout() {
     <>
       <Header onSearch={handleSearch} />
       <Outlet context={{ jobs, loading, error }} />
+      <Footer/>
     </>
   );
 }
