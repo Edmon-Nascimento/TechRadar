@@ -1,73 +1,56 @@
-# React + TypeScript + Vite
+# TechRadar – Tech Jobs Radar
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+TechRadar is a web application built to practice API consumption, component modularization, and scalable front-end architecture.  
+The platform fetches and displays remote tech job listings using the Remotive Jobs API, providing a clean and organized interface for exploring opportunities.
 
-Currently, two official plugins are available:
+This project was developed as part of my continuous improvement as a front-end developer, with a strong focus on structure, responsibility separation, and maintainable code.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Project Purpose
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The main goals of this project were:
 
-## Expanding the ESLint configuration
+- Practice consuming external APIs
+- Strengthen modular architecture in React
+- Improve TypeScript usage for safer and predictable code
+- Work with reusable components
+- Structure a scalable front-end project
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Rather than building a complex system, the focus was on applying fundamentals correctly and building with intention.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- React – Component-based UI development  
+- TypeScript – Static typing and improved developer experience  
+- Axios – HTTP client for API requests  
+- React Icons – UI icon integration  
+- Remotive Jobs API – Source of remote tech job listings  
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Features
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Fetches remote tech jobs from the Remotive API  
+- Displays job title, company, category, and key information  
+- Structured and responsive UI  
+- Modular component organization  
+- Strong typing with TypeScript  
+
+---
+
+## What I Practiced
+
+This project helped reinforce:
+
+- API consumption with Axios  
+- Handling asynchronous data  
+- Type modeling for external APIs  
+- Component modularization  
+- Clean project organization  
+- Separation of concerns in React  
+
+
+It represents my commitment to evolving from front-end development toward full-stack capability, focusing on strong architectural foundations.
